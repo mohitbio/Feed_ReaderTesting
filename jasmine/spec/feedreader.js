@@ -34,7 +34,7 @@ $(function() {
         it('have valid defined URLs and not empty', function() {
             allFeeds.forEach(function(x) {
                 expect(x.url).toBeDefined();
-                expect(x.url.length).toBeGreaterThan(1);
+                expect(x.url.length).toBeGreaterThan(0);
             });
         });
 
@@ -46,7 +46,7 @@ $(function() {
         it('have valid defined names and not empty', function() {
             allFeeds.forEach(function(x) {
                 expect(x.name).toBeDefined();
-                expect(x.name.length).toBeGreaterThan(1);
+                expect(x.name.length).toBeGreaterThan(0);
             });
         });
     });
